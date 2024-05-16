@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}View Products{% endblock %}
+
+{% block content %}
+    <h1 style="color: darkgreen;">View Products</h1>
+    <ul>
+        {% for product in products %}
+            <li style="color: lightseagreen;">{{ product.product_name }} ({{ product.pk }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

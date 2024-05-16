@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Product{% endblock %}
+
+{% block content %}
+    <h1>Search Product</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.product_name }} ({{ product.pk }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
